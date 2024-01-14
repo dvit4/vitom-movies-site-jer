@@ -1,0 +1,81 @@
+* {
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+
+body {
+    background: rgb(36, 36, 36)
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    /* adjust the number of columns as needed */
+    grid-gap: 10px;
+    /* add some spacing between images if desired */
+    margin-top: 300px;
+}
+
+/* Optional: If you want the images to have a specific size or aspect ratio */
+.image-grid img {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo img {
+    height: 200px;
+
+}
+
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.search-form {
+    display: flex;
+}
+
+.search-form input[type="text"] {
+    padding: 5px;
+    border-radius: 25px;
+    width: 600px;
+    height: 40px;
+}
+
+.search-form button {
+    padding: 5px 10px;
+    border-radius: 20px;
+}
